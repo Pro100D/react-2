@@ -19,6 +19,7 @@ export class SearchForm extends Component {
       return;
     }
     this.props.onSubmit(this.state.serchValue);
+    this.setState({ serchValue: '' });
   };
 
   render() {
